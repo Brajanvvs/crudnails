@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Nail Salon</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<h1><a href="/">Nail Salon</a></h1>
+
+<div id="menu">
+
+<a href="dashboard.html">Mis citas</a>
+
+<a id="loginLink" href="login.html">Login</a>
+<a id="registerLink" href="register.html">Registro</a>
+
+<a id="logoutLink" style="display:none;" onclick="logout()">Cerrar sesión</a>
+
+</div>
+
+<br><br>
+
+
+<!-- PANEL ADMIN -->
+
+<div id="adminPanel" style="display:none">
+
+<h2>Agregar servicio</h2>
+
+<input id="title" placeholder="Título">
+<input id="price" placeholder="Precio">
+<input id="image" placeholder="Imagen">
+
+<button onclick="createService()">Crear servicio</button>
+
+</div>
+
+
+<!-- SERVICIOS -->
+
+<div id="services"></div>
+
+
+<h3 id="selectedServiceText"></h3>
+
+
+<h2>Calendario de citas</h2>
+
+<table id="calendar">
+
+<thead>
+
+<tr>
+<th>Hora</th>
+<th>Lunes</th>
+<th>Martes</th>
+<th>Miércoles</th>
+<th>Jueves</th>
+<th>Viernes</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>7:00</td>
+<td data-day="Lunes" data-time="7:00"></td>
+<td data-day="Martes" data-time="7:00"></td>
+<td data-day="Miércoles" data-time="7:00"></td>
+<td data-day="Jueves" data-time="7:00"></td>
+<td data-day="Viernes" data-time="7:00"></td>
+</tr>
+
+<tr>
+<td>12:00</td>
+<td data-day="Lunes" data-time="12:00"></td>
+<td data-day="Martes" data-time="12:00"></td>
+<td data-day="Miércoles" data-time="12:00"></td>
+<td data-day="Jueves" data-time="12:00"></td>
+<td data-day="Viernes" data-time="12:00"></td>
+</tr>
+
+<tr>
+<td>15:00</td>
+<td data-day="Lunes" data-time="15:00"></td>
+<td data-day="Martes" data-time="15:00"></td>
+<td data-day="Miércoles" data-time="15:00"></td>
+<td data-day="Jueves" data-time="15:00"></td>
+<td data-day="Viernes" data-time="15:00"></td>
+</tr>
+
+</tbody>
+
+</table>
+
+
+<script src="js/services.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+
+</html>
